@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#education">Education</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I am <strong>Isha Kashyap</strong>, a
+                <em>Computer Science (AI)</em> student.
+                <mark>Currently studying in Third Year at Chitkara University.</mark>
+            </p><br>
+
+            <blockquote>
+                "Dream big. Stay humble. Never stop learning."
+            </blockquote>
+
+            <p>
+                I enjoy <strong>Web Development</strong>,
+                <em>Artificial Intelligence</em>,
+                <mark>Machine Learning</mark>, and writing programs in
+                <code>C++</code>.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <table border="2" cellpadding="10" cellspacing="0">
+
+                <tr>
+                    <th>Degree</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                    <th>Percentage / CGPA</th>
+                </tr>
+
+                <tr>
+                    <td>B.E. CSE (AI)</td>
+                    <td>Chitkara University</td>
+                    <td>2024-2028</td>
+                    <td>8.5 CGPA</td>
+                </tr>
+
+                <tr>
+                    <td>Class XII</td>
+                    <td>CBSE</td>
+                    <td>2024</td>
+                    <td>85%</td>
+                </tr>
+
+                <tr>
+                    <td>Class X</td>
+                    <td>CBSE</td>
+                    <td>2022</td>
+                    <td>90%</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Pet Adoption Website</h3>
+
+                <p>
+                    Developed a Pet Adoption Website using Django and Flask REST API
+                    to simplify the adoption process.
+                </p>
+            </article><br>
+
+            <article>
+                <h3>Food Prediction System</h3>
+
+                <p>
+                    Built a Machine Learning project using the Random Forest
+                    algorithm for food price prediction.
+                </p>
+            </article><br>
+
+            <article>
+                <h3>Fire Detection System</h3>
+
+                <p>
+                    Developed an IoT-based Fire Detection System using ESP32,
+                    MQ-2 Gas Sensor, Fire Sensor, LCD Display, and Blynk.
+                </p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <address>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ishakashyap17@gmail.com">
+                        ishakashyap17@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +91-9876543210
+                </p>
+
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/ishak27" target="_blank">
+                        github.com/ishak27
+                    </a>
+                </p>
+
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/ishakashyap" target="_blank">
+                        linkedin.com/in/ishakashyap
+                    </a>
+                </p>
+
+            </address>
+
+        </section>
+
+        <hr>
+
+        <section id="contact-form">
+
+            <h2>Contact Form</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend><strong>Send Me a Message</strong></legend>
+
+                    <table cellpadding="8">
+
+                        <tr>
+                            <td><label for="name"><strong>Name:</strong></label></td>
+                            <td>
+                                <input type="text" id="name" name="name" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="email"><strong>Email:</strong></label></td>
+                            <td>
+                                <input type="email" id="email" name="email" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="phone"><strong>Phone:</strong></label></td>
+                            <td>
+                                <input type="tel" id="phone" name="phone">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="subject"><strong>Subject:</strong></label></td>
+                            <td>
+                                <input type="text" id="subject" name="subject">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="message"><strong>Message:</strong></label></td>
+                            <td>
+                                <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Isha Kashyap | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
