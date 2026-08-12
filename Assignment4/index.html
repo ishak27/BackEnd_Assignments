@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <h1>Online Movie Ticket Booking System</h1>
+    <script>
+        console.log("1. Check Seat Availability");
+        let booking = new Promise(function(resolve, reject) {
+
+            setTimeout(function() {
+
+                let seatsAvailable = true;
+
+                if (seatsAvailable) {
+                    resolve("Seats Available");
+                } else {
+                    reject("No Seats Available.");
+
+                }
+            }, 2000);
+
+        });
+
+        booking
+
+            .then(function(message) {
+
+                console.log(message);
+
+                return "2. Process Payment";
+            })
+
+            .then(function(message) {
+
+                console.log(message);
+
+                return "3. Confirm Booking";
+            })
+
+            .then(function(message) {
+
+                console.log(message);
+
+                console.log("4. Generate Ticket");
+
+            })
+
+            .catch(function(error) {
+
+                console.log("Error:", error);
+
+            });
+
+    </script>
+
+</body>
+</html>
