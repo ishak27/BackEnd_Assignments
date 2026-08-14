@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Out!!</title>
+</head>
+<body>
+    <h1>The Result is out!!!</h1>
+
+    <button onclick="checkResult()">
+        Check your Result
+    </button>
+
+    <p id="p"></p>
+
+     <script>
+
+        function calculateResult(){
+        
+        // Promise is used to handle asynchronous function
+        return new Promise(resolve => {
+
+             // setTimeout() delays the execution of the code (here by 3 seconds).
+                setTimeout(() => {
+
+                // resolve() tells that the task is completed and sends the result back to the calling function.
+                    resolve("Your Result is Ready! You scored 85 marks."); 
+                    
+                }, 3000);
+            });
+        }
+        
+     // async function perform asynchronous task and return promise
+        async function checkResult() {    
+        
+
+            const para = document.getElementById("p");
+            para.innerText = "Calculating the result...";
+
+        //  await function pauses the above asynchronous function until calculateResult() is executed
+            const res = await calculateResult();   
+            
+        //  display the final result
+            para.innerText = res;
+
+
+
+        }
+
+    </script> 
+
+</body>
+</html>
